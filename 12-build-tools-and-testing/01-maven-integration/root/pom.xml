@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>com.packt</groupId>
+   <artifactId>root</artifactId>
+   <packaging>pom</packaging>
+   <version>1.0-SNAPSHOT</version>
+   <name>root</name>
+   <url>http://maven.apache.org</url>
+
+   <modules>
+      <module>main</module>
+      <module>lib</module>
+   </modules>
+
+   <build>
+      <pluginManagement>
+         <plugins>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-compiler-plugin</artifactId>
+               <version>3.6.2</version>
+               <configuration>
+                  <release>9</release>
+               </configuration>
+            </plugin>
+            <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+               <artifactId>exec-maven-plugin</artifactId>
+               <version>1.6.0</version>
+               <executions>
+                  <execution>
+                     <goals>
+                        <goal>exec</goal>
+                     </goals>
+                  </execution>
+               </executions>
+               <configuration>
+                  <executable>${JAVA_HOME}/bin/java</executable>
+                  <arguments>
+                     <argument>--module-path</argument>
+                     <modulepath/>
+                     <argument>--module</argument>
+                     <argument>packt.main/com.packt.App</argument>
+                  </arguments>
+               </configuration>
+            </plugin>
+         </plugins>
+      </pluginManagement>
+   </build>
+</project>

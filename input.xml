@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<addressbook>
+   <contact>
+      <firstname>Edsger</firstname>
+      <lastname>Dijkstra</lastname>
+      <address>
+        <street>5612</street>
+        <city>AZ</city>
+        <state>Eindhoven</state>
+        <country>Netherlands</country>
+      </address>
+      <phone>345-678-9012</phone>
+   </contact>
+   <contact>
+      <firstname>Alan</firstname>
+      <lastname>Turing</lastname>
+      <address>
+        <street>Oxford Rd</street>
+        <city>M13 9PL</city>
+        <state>Manchester</state>
+        <country>England</country>
+      </address>
+      <phone>456-789-0123</phone>
+   </contact>
+   <contact>
+      <firstname>Ada</firstname>
+      <lastname>Lovelace</lastname>
+      <address>
+        <street>Marylebone St</street>
+        <city>Marylebone</city>
+        <state>London</state>
+        <country>England</country>
+      </address>
+      <phone>234-567-8901</phone>
+   </contact>
+   <contact>
+      <firstname>Charles</firstname>
+      <lastname>Babbage</lastname>
+      <address>
+        <street>Trinity Street</street>
+        <city>Cambridge</city>
+        <state>London</state>
+        <country>England</country>
+      </address>
+      <phone>123-456-7890</phone>
+   </contact>
+   <contact>
+      <firstname>Tim</firstname>
+      <lastname>Berners-Lee</lastname>
+      <address>
+        <street>High Street</street>
+        <city>OX1 4AS</city>
+        <state>Oxford</state>
+        <country>England</country>
+      </address>
+      <phone></phone>
+   </contact>
+</addressbook>
